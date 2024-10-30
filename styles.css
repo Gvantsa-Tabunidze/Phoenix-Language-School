@@ -1,0 +1,199 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  min-height: 7rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ padding-top: 6rem;
+}
+
+
+.error{
+  color: red;
+  font-size: 0.875rem;
+}
+
+
+tr {
+  height: 80px;
+}
+
+.active-btn{
+  background-color: brown;
+}
+
+.modal{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+
+}
+.validation-popup{
+  min-height: 12rem;
+  width:26.25rem;
+  background-color: bisque;
+  border-radius: 16px;
+  padding: 1rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top:50%;
+  
+}
+
+.active-modal{
+display: block;
+}
+
+
+
+.checkboxes{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.checkboxes input {
+width: 1.2rem;
+}
+
+fieldset {
+border: 0.063rem solid;
+padding: 1rem;
+border-radius: 1rem;
+margin-bottom: 1rem;
+}
+
+.form-select{
+  width: 100%;
+}
+
+
+
+.col{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 5rem;
+}
+
+
+#about-me{
+  height:6.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.pop-upfooter{
+display: flex;
+gap: 0.5rem;
+}
+
+#tooltip {
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  display: none;
+}
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
+}
+
+
+
+#tooltip[data-show] {
+  display: block;
+}
+
+
+.reset{
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+
+}
+
+
+.reset:hover{
+  color: red;
+  border: 1px solid;
+}
+
+
+.reset-info{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+legend{
+margin-bottom: 0%;
+}
+
+.custom-tooltip{
+ font-size: 1rem;
+}
+
+
+.comments{
+  background-color: aquamarine;
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 16px;
+}
+
+.closeBtn > i{
+ font-size:24px;
+}
+.closeBtn{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+  
+}
+
+.overlay{
+  max-width: 360px;
+  width: 100%;
+  height: 240px;
+  background-color:aliceblue;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  display: none;
+  padding: 32px;
+}
+
+.overlay.active{
+  display: block;
+}
